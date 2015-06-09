@@ -37,9 +37,9 @@ cd ../
 cd thumb50
 mogrify -resize 50% *
 cd ../
-sh python picarray.py flist.txt thumb10 5
-sh python picarray.py flist.txt thumb15 4
-sh python picarray.py flist.txt thumb20 3
-sh python picarray.py flist.txt thumb30 3
-sh python picarray.py flist.txt thumb40 2
-sh python picarray.py flist.txt thumb50 2
+python picarray.py flist.txt thumb10 5
+python picarray.py flist.txt thumb15 4
+python picarray.py flist.txt thumb20 3
+python picarray.py flist.txt thumb30 3
+python picarray.py flist.txt thumb40 2
+python picarray.py flist.txt thumb50 2
