@@ -37,9 +37,9 @@ cd ../
 cd thumb50
 mogrify -resize 50% *
 cd ../
-python picarray.py flist.txt thumb10 5
-python picarray.py flist.txt thumb15 4
-python picarray.py flist.txt thumb20 3
-python picarray.py flist.txt thumb30 3
-python picarray.py flist.txt thumb40 2
-python picarray.py flist.txt thumb50 2
+python picarray.py flist.txt thumb10 5  DO Class of 2015 graduation
+python picarray.py flist.txt thumb15 4  DO Class of 2015 graduation
+python picarray.py flist.txt thumb20 3  DO Class of 2015 graduation
+python picarray.py flist.txt thumb30 3  DO Class of 2015 graduation
+python picarray.py flist.txt thumb40 2  DO Class of 2015 graduation
+python picarray.py flist.txt thumb50 2  DO Class of 2015 graduation
