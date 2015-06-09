@@ -2,10 +2,15 @@ cd full
 find . -maxdepth 1 \( -iname "*jpg" -o -iname "*gif" -o -iname "*.png" \) -type f > ../flist.txt
 cd ../
 sed  -i 's#\./##g' flist.txt
-mkdir thumb10;
-echo "10 step 1"
-mkdir thumb15;
-mkdir thumb20;
+mkdir inter
+cp full/* inter/.
+cd inter
+mogrify  -crop 100x50%+0+0  +repage * #--cut off bottom half
+mogrify  -gravity Center -crop 50x100%+0+0  +repage *  #--cut off 1/4 of each side
+mkdir thumb10
+echo "10 step 1 done"
+mkdir thumb15
+mkdir thumb20
 mkdir thumb30
 mkdir thumb40
 mkdir thumb50

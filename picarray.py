@@ -23,7 +23,7 @@ myList = [q for q in ifile.readlines()]
 # myList=['GEO_7918.jpg' , 'GEO_7920.jpg' , 'GEO_7921.jpg' , 'GEO_7923.jpg' , 'GEO_7926.jpg' , 'GEO_7928.jpg' , 'GEO_7929.jpg']
 
 ## p = re.compile( './')
-
+#<html><head><title>Graduate Commencement 2014</title></head><body><table><tr><td colspan=5><H3 align="center">Graduate Commencement 2014</H3></td></tr><tr><td colspan=4></td><td><H5 align="center"><a href="http://dev.pcom.edu/pcomweb/marcwe/grad_hooding_2014/grad_hooding_2014.html"></a></H5></td></tr><tr>
 
 i = 0
 while i < len(myList):
