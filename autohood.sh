@@ -15,12 +15,12 @@ mkdir thumb30
 mkdir thumb40
 mkdir thumb50
 echo "50 step 1 done"
-cp full/* thumb10/.
-cp full/* thumb15/.
-cp full/* thumb20/.
-cp full/* thumb30/.
-cp full/* thumb40/.
-cp full/* thumb50/.
+cp inter/* thumb10/.
+cp inter/* thumb15/.
+cp inter/* thumb20/.
+cp inter/* thumb30/.
+cp inter/* thumb40/.
+cp inter/* thumb50/.
 echo "50 step 2 done"
 cd thumb10
 mogrify -resize 10% *
