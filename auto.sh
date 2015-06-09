@@ -1,10 +1,11 @@
 cd full
 find . -maxdepth 1 \( -iname "*jpg" -o -iname "*gif" -o -iname "*.png" \) -type f > ../flist.txt
 cd ../
-mkdir thumb10
+# sed  -i 's#\./##g' flist.txt
+mkdir thumb10;
 echo "10 step 1"
-mkdir thumb15
-mkdir thumb20
+mkdir thumb15;
+mkdir thumb20;
 mkdir thumb30
 mkdir thumb40
 mkdir thumb50
@@ -36,3 +37,9 @@ cd ../
 cd thumb50
 mogrify -resize 50% *
 cd ../
+sh python picarray.py flist.txt thumb10 5
+sh python picarray.py flist.txt thumb15 4
+sh python picarray.py flist.txt thumb20 3
+sh python picarray.py flist.txt thumb30 3
+sh python picarray.py flist.txt thumb40 2
+sh python picarray.py flist.txt thumb50 2
