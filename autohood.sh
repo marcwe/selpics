@@ -8,6 +8,10 @@ sed  -i 's#\./##g' flist.txt
 mkdir inter-hood
 cp full-hood/* inter-hood/.
 cd inter-hood
+
+# control large size images
+mogrify -resize 1800x1800\> *
+
 mogrify  -crop 100x50%+0+0  +repage * #--cut off bottom half
 mogrify  -gravity Center -crop 50x100%+0+0  +repage *  #--cut off 1/4 of each side
 cd ../
