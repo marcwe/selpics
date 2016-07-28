@@ -69,11 +69,11 @@ cd ../
 cd slide800
 mogrify * -resize 800x800 -background white  -gravity center -extent 600x600 -quality 85 *
 cd ../
-python picarray.py flist.txt thumb10 5 "$title"
+python picarray.py flist.txt thumb10 full 5 "$title"
 echo "py 10"
-python picarray.py flist.txt thumb15 4  "$title"
+python picarray.py flist.txt thumb15 full 4  "$title"
 echo "py 20"
-python picarray.py flist.txt thumb20 3  "$title"
-python picarray.py flist.txt thumb30 3  "$title"
-python picarray.py flist.txt thumb40 2  "$title"
-python picarray.py flist.txt thumb50 2  "$title"
+python picarray.py flist.txt thumb20 full 3  "$title"
+python picarray.py flist.txt thumb30 full 3  "$title"
+python picarray.py flist.txt thumb40 full 2  "$title"
+python picarray.py flist.txt thumb50 full 2  "$title"
